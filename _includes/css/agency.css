@@ -266,7 +266,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    /*background-image: url(../img/header-bg.jpg);*/
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -637,6 +637,8 @@ section h3.section-subheading {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
+    width: 250px;
+    height: 250px;
 }
 
 .team-member h4 {
@@ -740,6 +742,11 @@ footer ul.quicklinks {
 
 ul.social-buttons {
     margin-bottom: 0;
+}
+
+.app-icon {
+    /*border: solid;*/
+    margin: 0px 20px;
 }
 
 ul.social-buttons li a {
@@ -861,4 +868,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+
+video {
+    -webkit-filter: opacity(0.8) hue-rotate(180deg);
+    filter: opacity(0.8) hue-rotate(180deg);
 }

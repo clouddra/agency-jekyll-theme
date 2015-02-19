@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in *.jpg
+do
+  ./aspectcrop -a 1 "$file" "$file" >> results.out
+done

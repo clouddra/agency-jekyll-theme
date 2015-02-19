@@ -8,12 +8,21 @@
                 </div>
             </div>
             <div class="row">
-            {% for post in site.posts %}
+            {% for post in site.data.projects %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                    <!-- <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal"> -->
+                    <a class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                                <i class="app-icon fa fa-android fa-3x"></i>
+                                <i class="app-icon fa fa-apple fa-3x"></i>
+                                <i class="app-icon fa fa-globe fa-3x"></i>
+                                <!--  <li><a href=""><i class="fa fa-plus"></i></a></li> -->
+
+                             <!-- <ul class="app-icons">
+                                <li> <i class="fa fa-plus fa-3x"><a href=""></a></i></li>
+                                <li> <i class="fa fa-plus fa-3x"><a href=""></a></i></li>
+                            </ul>  -->
                             </div>
                         </div>
                         <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive" alt="">
